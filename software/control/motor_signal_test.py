@@ -1,0 +1,1 @@
+print('Testing motor signals...')
