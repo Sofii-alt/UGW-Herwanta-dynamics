@@ -1,1 +1,1 @@
-Super secret military grade project
+# Main project overview
