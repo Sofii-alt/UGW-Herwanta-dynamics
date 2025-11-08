@@ -1,7 +1,17 @@
 # Control Logic
 
-- Basic movement: forward, backward, turn.
-- PID control for smooth motion.
-- Motor signals controlled via microcontroller.
-- Safety: stop on obstacle detection.
+## Modes
+1. Manual control (using joystick or keyboard)
+2. Autonomous navigation (waypoints)
 
+## Inputs
+- Motor encoders
+- LIDAR / distance sensors
+
+## Outputs
+- Motor PWM signals
+- Status LEDs / logging
+
+## Notes
+- Initially, test each motor individually.
+- Verify encoders provide reliable feedback.
