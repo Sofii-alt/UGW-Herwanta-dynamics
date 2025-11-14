@@ -1,100 +1,63 @@
-# Forest rover Project
+# Rover Project – Autonomous Mapping and Paintball System
 
-# Autonomous Mapping & Mission Planning Robot
+Welcome to our student rover project! This is a small-group work-in-progress autonomous ground robot that can map its surroundings, navigate, and has a paintball/marking system on top.
 
-[Consept picture]
-*Figure 1: Concept sketch of the robot (LIDAR on top, motors and encoders below, controller in middle......)*
+The aim is to combine mechanical design, control systems, mapping, and system integration, while learning real-world robotics skills.
+Note: Everyone contributes a bit across the teams since this is a small student project.
 
----
-
-## Overview
-This project is a student-designed mobile robot aimed at exploring autonomous mapping, localization, and mission planning. It integrates mechanical, electrical, and software systems to demonstrate real-world robotics principles.
-
-The robot uses:
-- **LIDAR** for 2D mapping and environment sensing
-- **Motors & encoders** for movement and odometry
-- **Battery pack** for power management
-- **Controller board** running ROS2/ArduPilot for software integration
-- **Mission planning software** for autonomous navigation
-
----
-
-## Project Goals
-1. **Remote Control & Motor Testing** – Verify that motors, encoders, and sensors function correctly.  
-2. **Room Mapping & Visualization** – Use LIDAR and wheel odometry to create 2D maps.  
-3. **Autonomous Navigation** – Navigate to predefined waypoints using mapping data.  
-4. **Future Work:** Full SLAM-based navigation with obstacle avoidance.
-
----
-
-## Team Members
-| Member | Role |
-|--------|------|
-| Leo    | Aiming & Sensors (additional sensors, aiming system software)                             |
-| Veeti  | Mechanical Design (chassis, wheels, mounts) ; Electrical Design (motors, battery, wiring) ; 3D modeling and illusitration |
-| Aatu   | Mechanical Design (chassis, wheels, mounts) ; Electrical Design (motors, battery, wiring) |
-| Sofia  | Mapping & Control (LIDAR, SLAM, software integration)                                     |
-| Eelis  |                                                                                           |
-
----
-
-## Repo Structure
-/docs - Documentation, plans, sketches, and budget
-/hardware - Motor, battery, and sensor details; vacuum teardown
-/software - Code for mapping, control, mission planning, and tests
-README.md - Project overview and progress summary
-
----
-
-## Current Progress
-- Rower desines are almost finished.
-- Budget sheet created with initial cost estimates and priority tracking.  
-- GitHub structure fully organized.  
-- Roborock vacuum partially dismantled for reuse of LIDAR, motors, encoders, and battery.  
-- Linux live USB prepared for software development and simulation.  
-- Placeholder scripts created for mapping, control, and mission planning.  
-- Sample LIDAR datasets visualized in Python and RViz.  
+# Robot showcase
+Here is what our rower plans look like. Dosen't yet have the paintball mount:
 
 
-[Sample LIDAR Map] 
-*Figure 2: Example of 2D point cloud visualization using sample LIDAR data......*
 
----
 
-## Next Steps
-- Complete Roborock teardown and document all reusable components.  
-- Connect LIDAR to the controller and verify real-time data acquisition.  
-- Test motor drivers with Roborock wheels and encoders.  
-- Implement basic SLAM and mapping using Python or ROS2.  
-- Begin mission planning integration for waypoint navigation.  
-- Update GitHub with test logs, diagrams, and screenshots of functioning modules.
+# Project goals
+- Build a rover that can map rooms or outdoor areas using LIDAR, wheel encoders, and IMU
+- Enable basic navigation and control with Raspberry Pi 4 + Pixhawk 6C
+- Mount a paintball/marking system for testing targeting and actuation
+- Learn how to integrate mechanical, electrical, and software systems
+- Future goal: robust rover for forestry or rough terrain, autonomously marking trees and mapping areas
 
----
+# Teams and Members
+## Team 1 – Mechanical
+Members:
+- Veeti → calculations and desine
+- Aatu → 3D renderings and desine
+- Responsibilities: chassis, motors, encoders, battery, electronics, mechanical stability
 
-**Highlights:**
-- `/docs` contains system diagrams, mapping plan, control logic, and budget planning.  
-- `/hardware` contains motor and battery calculations, sensor test logs, and vacuum teardown documentation.  
-- `/software` contains mapping simulation scripts, motor control placeholders, mission planning pseudocode, and integration tests.  
+## Team 2 – Paintball/marking system 
+Members:
+- Leo → design & actuation of paintball system
+- Responsibilities: mount and test marking system, work with mechanical team
 
----
+## Team 3 – Mapping + controls + system Integration 
+Members:
+- Sofia → mapping, localization, ROS2, mission planning
+- Eelis → motor control, integration, sensor diagnostics
+- Responsibilities: SLAM, navigation, motor control, sensor integration, system testing
 
-## Important Files & Links
-- **Documentation:** `/docs` (system overview, mapping plan, control logic, sketches)  
-- **Hardware calculations:** `/hardware/motors/motor_calculations.xlsx` & `/hardware/battery/battery_calculations.xlsx`  
-- **Mapping software:** `/software/mapping/map_processing.py`  
-- **Control software:** `/software/control/controller_code.py`  
-- **Mission planning:** `/software/mission_planning/path_planning.py`  
-- **Tests & simulations:** `/software/tests/`  
+Everyone contributes across teams – collaboration is key!
 
----
+# Current progress (placeholder for updates)
+- Mechanical: chassis desined, 3D renderings available
+- Electrical: motor/battery calculations in progress
+- Software: Linux + ArduPilot + ROS2 installed, repo structure ready
+- Mapping & Control: placeholders ready for logs and scripts
 
-## Skills Demonstrated
-- System-level thinking: Integration of hardware & software modules.  
-- Practical robotics: Working with sensors, motors, and mapping algorithms.  
-- Project management: Modular GitHub structure, documentation, and planned testing workflow.  
-- Innovation & initiative: Reuse of commercial hardware for research-grade robotics development.  
+Progress updates:
 
----
 
-## Screenshots / Diagrams Placeholder
-- Add `/docs/design_sketches/robot_concept.png` → concept diagram  
+
+# Repository structure
+- design_sketches/ -> mechanical concepts and 3D renderings
+- hardware/ -> motors, battery, sensors, calculations, wiring diagrams
+- software/ -> control, mapping, mission planning, tests
+- tests/ -> logs, sensor diagnostics, signal checks
+- budget.xlsx -> ongoing cost calculations
+
+# Future goals
+- Build a robust chassis for rough/forest terrain
+- Fully autonomous navigation system
+- Map and navigate marked areas for forestry applications
+- Use this project as a foundation for Bachelor’s or Master’s thesis
+- Showcase videos of mapping and navigation in action
