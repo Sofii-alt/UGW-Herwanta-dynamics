@@ -19,6 +19,8 @@ Here is what our rower plan looks like for now. Dosent yet have the paintball mo
 - Learn how to integrate mechanical, electrical, and software systems
 - Future goal: robust rover for forestry or rough terrain, autonomously marking trees and mapping areas
 
+
+
 # Teams and Members
 Everyone contributes across teams. Collaboration is key!
 
@@ -40,13 +42,17 @@ Members:
 - Responsibilities: SLAM, navigation, motor control, sensor integration, system testing
 
 
+
+
 # Current progress (placeholder for updates)
 - Mechanical: chassis desined, 3D renderings available
 - Electrical: motor/battery calculations in progress
 - Software: Linux + ArduPilot + ROS2 installed, repo structure ready
 - Mapping & Control: placeholders ready for logs and scripts
 
-Progress updates:
+# Progress updates:
+- Getting Raspery Pi 4, Pixhawk 6C and some motores
+- Utilaized a Roborock vacumes LIDAR
 
 
 
