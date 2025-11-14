@@ -8,7 +8,7 @@ The goal is simple: make the robot understand where it is and what the room look
 - Use the map later for path planning and missions
 - Keep everything light enough to run on a Raspberry Pi 4
 
-# What We Will Use
+# What files do what
 These are the files/folders in our repo connected to mapping:
 - software/mapping/
 - README.md — instructions for running mapping code
@@ -19,7 +19,7 @@ These are the files/folders in our repo connected to mapping:
 - wiring_diagram.png — how sensors connect
 - (for future: encoder data, IMU notes)
 
-# Mapping Pipeline (Simple Explanation)
+# Simple mapping pipeline
 1. Gather Sensor Data
 Data we’ll use:
 - LIDAR from the vacuum
@@ -57,7 +57,5 @@ Step 2
 # TODO (For Team)
 - Clean up LIDAR data logs
 - Add encoder -> odom code
-
- Build first map prototype
-
- Write short results in tests/ folder
+- Build first map prototype
+- Write short results in tests/ folder
