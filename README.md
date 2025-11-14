@@ -19,6 +19,8 @@ Here is what our rower plans look like. Dosen't yet have the paintball mount:
 - Future goal: robust rover for forestry or rough terrain, autonomously marking trees and mapping areas
 
 # Teams and Members
+Everyone contributes across teams. Collaboration is key!
+
 ## Team 1 – Mechanical
 Members:
 - Veeti → calculations and desine
@@ -36,7 +38,6 @@ Members:
 - Eelis → motor control, integration, sensor diagnostics
 - Responsibilities: SLAM, navigation, motor control, sensor integration, system testing
 
-Everyone contributes across teams – collaboration is key!
 
 # Current progress (placeholder for updates)
 - Mechanical: chassis desined, 3D renderings available
