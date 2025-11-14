@@ -1,57 +1,63 @@
-# Overview
+# Mapping Plan
+This file explains how we will handle mapping for our robot.
+The goal is simple: make the robot understand where it is and what the room looks like without panicking or drawing abstract art.
 
-This document outlines the plan for implementing the mapping system for our autonomous ground robot.
-Our main goal: create a reliable SLAM pipeline that can run on a Raspberry Pi 4 + Pixhawk 6C setup without melting either component.
+# What We’re Trying to Achieve
+- Build a 2D map of rooms or hallways
+- Track the robot’s position on that map
+- Use the map later for path planning and missions
+- Keep everything light enough to run on a Raspberry Pi 4
 
-# Objectives
-- Build a 2D map of the environment
-- Fuse data from sensors (IMU, wheel encoders, lidar (, a camera in the future))
-- Enable localization (robot knowing where it is on the map)
-- Provide the navigation system with a usable map + pose estimate
-- Keep CPU usage low enough so the Pi doesn’t spontaneously enter orbit
+# What We Will Use
+These are the files/folders in our repo connected to mapping:
+- software/mapping/
+- README.md — instructions for running mapping code
+- map_processing.py — processes sensor data
+- room_visualization.py — shows the map visually
+- sensors/
+- lidar_test_logs.md — notes + test results from the vacuum LIDAR
+- wiring_diagram.png — how sensors connect
+- (for future: encoder data, IMU notes)
 
-# Components
-- ROS2 (Humble)
-- slam_toolbox (for Pi)
-- MAVLink connection for state + IMU
-- Wheel encoders (when hardware team gives them)
+# Mapping Pipeline (Simple Explanation)
+1. Gather Sensor Data
+Data we’ll use:
+- LIDAR from the vacuum
+- Wheel encoder data (when the harware team gives them)
+- IMU from the Pixhawk
+- These will later be combined.
 
-# Mapping Pipeline Plan
-Data Input
-- /mavros/imu/data from Pixhawk
-- /encoders (custom topic)
-- /scan if lidar exists
-- /camera if visual SLAM
+️2. Convert This Into Odom Data
+We produce a clean “robot position estimate” using:
+- encoder distance
+- rotation from IMU
+- time stamps
+- This goes into map_processing.py.
 
-Preprocessing
-IMU → filter
-Encoders → odom node
-Sensor fusion into /odom
-Publish transforms (/tf)
-SLAM Node
-Launch slam_toolbox
-Real-time map building mode
-Adjust parameters (scan resolution, frequency, loop closure)
+3. Build a 2D Map
+We run a mapping algorithm (SLAM) on Raspberry Pi:
+- takes LIDAR scans
+- takes odom
+- updates the map
 
-# Map Output
-- /map (2D occupancy grid)
-- /map_metadata
-- /pose estimate
-- Save map to file for future navigation
+4. Visualize + Save the Map
+Using room_visualization.py to:
+- draw the map
+- save it for mission planning later
 
----
-# Testing Strategy
-- Test inside SITL + Gazebo first
-- Slowly add sensors
-- Tune until the map stops looking like modern art
-- Field tests in a hallway (slow robot = fewer lawsuits)
+# Testing plan
+Step 1
+- Test LIDAR from vacuum -> write logs to lidar_test_logs.md
+- Run simple map building in Python (even a basic occupancy grid)
+Step 2
+- Add IMU + encoder fusion
+- Small hallway test
+- Try not to map your shoes as obstacles
 
- # To-Do
- - ROS2 workspace
- - MAVROS connection test
- - SLAM toolbox installation
- - Odom calculations (when encoders mount)
- - First real map
- - Parameter tuning
+# TODO (For Team)
+- Clean up LIDAR data logs
+- Add encoder -> odom code
 
+ Build first map prototype
 
+ Write short results in tests/ folder
