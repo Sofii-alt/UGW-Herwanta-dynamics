@@ -1,9 +1,9 @@
-# whats needed
+# An owerlook on software
 This part is ment for desingning the software for a rover, capable of mapping, localization, and basic autonomous navigation.
 ---
 
 
-# Role A — Control Systems & Hardware Integration
+# Eelis — Control Systems & Hardware Integration
 Focus: Making the robot physically move and ensuring all hardware sensors communicate properly.
 
 Responsibilities:
@@ -33,7 +33,7 @@ Responsibilities:
 - Voltage requirements + power budget
 - Notes on regulators, fuses, and safe power design
 
-Role B — Mapping, Localization & Autonomy
+# Sofia — Mapping, Localization & Autonomy
 Focus: Making the robot understand its environment, localize itself, and navigate intelligently.
 
 Responsibilities:
