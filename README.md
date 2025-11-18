@@ -26,8 +26,8 @@ Everyone contributes across teams. Collaboration is key!
 
 ## Team 1 – Mechanical
 Members:
-- Veeti → calculations and desine
-- Aatu → 3D renderings and desine
+- Aatu → calculations and desine
+- Veeti → 3D renderings and desine
 - Responsibilities: chassis, motors, encoders, battery, electronics, mechanical stability
 
 ## Team 2 – Paintball/marking system 
