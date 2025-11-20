@@ -24,7 +24,7 @@ Here is what our rower plan looks like for now. Dosent yet have the paintball mo
 # Teams and Members
 Everyone contributes across teams. Collaboration is key!
 
-## Team 1 – Mechanical
+## Team 1: Mechanical
 Members:
 - Aatu -> calculations and desine
 - Veeti -> 3D renderings and desine
@@ -35,7 +35,7 @@ Members:
 - Leo -> design & actuation of paintball system
 - Responsibilities: mount and test marking system, work with mechanical team
 
-## Team 3 – Mapping + controls + system Integration 
+## Team 3: Mapping + controls + system Integration 
 Members:
 - Sofia -> mapping, localization, ROS2, mission planning, GitHub upkeep, -> motor control, integration, sensor diagnostics
 - Responsibilities: SLAM, navigation, motor control, sensor integration, system testing
