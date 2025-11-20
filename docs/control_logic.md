@@ -11,12 +11,12 @@ Make the robot respond smoothly to:
 
 # Repo Parts Related to Control
 - software/control/
-- controller_code.py — main control logic (speed + turning)
-- motor_signal_test.py — sends test signals to motors
-- README.md — instructions for running control code
+- controller_code.py - main control logic (speed + turning)
+- motor_signal_test.py - sends test signals to motors
+- README.md - instructions for running control code
 - hardware/motors/
-- motor_calculations.xlsx — torque + RPM calculations
-- test_results.md — notes from motor testing
+- motor_calculations.xlsx - torque + RPM calculations
+- test_results.md - notes from motor testing
 - hardware/battery/
 - power diagrams to help avoid blowing up the Pi by mistake
 
@@ -58,7 +58,7 @@ Eventually we add:
 Step 1
 - Run motor_signal_test.py
 - Document results in test_results.md
-- Make simple script: forward → stop → backward
+- Make simple script: forward -> stop -> backward
 Step 2
 - Integrate encoder feedback
 - Test turning accuracy
