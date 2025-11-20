@@ -1,4 +1,4 @@
-# Rover Project – Autonomous Mapping and Paintball System
+# Rover Project: Autonomous Mapping and Paintball System
 
 Welcome to our student rover project! This is a small-group work-in-progress autonomous ground robot that can map its surroundings, navigate, and has a paintball/marking system on top.
 
@@ -26,20 +26,20 @@ Everyone contributes across teams. Collaboration is key!
 
 ## Team 1 – Mechanical
 Members:
-- Aatu → calculations and desine
-- Veeti → 3D renderings and desine
+- Aatu -> calculations and desine
+- Veeti -> 3D renderings and desine
 - Responsibilities: chassis, motors, encoders, battery, electronics, mechanical stability
 
-## Team 2 – Paintball/marking system 
+## Team 2: Paintball/marking system 
 Members:
-- Leo → design & actuation of paintball system
+- Leo -> design & actuation of paintball system
 - Responsibilities: mount and test marking system, work with mechanical team
 
 ## Team 3 – Mapping + controls + system Integration 
 Members:
-- Sofia → mapping, localization, ROS2, mission planning, GitHub upkeep
-- Eelis → motor control, integration, sensor diagnostics
+- Sofia -> mapping, localization, ROS2, mission planning, GitHub upkeep, -> motor control, integration, sensor diagnostics
 - Responsibilities: SLAM, navigation, motor control, sensor integration, system testing
+- Eelis -> ?
 
 
 
