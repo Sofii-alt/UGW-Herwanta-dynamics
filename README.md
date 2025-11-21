@@ -28,6 +28,7 @@ Everyone contributes across teams. Collaboration is key!
 Members:
 - Aatu -> calculations and desine
 - Veeti -> 3D renderings and desine
+- Eelis -> stability calculations
 - Responsibilities: chassis, motors, encoders, battery, electronics, mechanical stability
 
 ## Team 2: Paintball/marking system 
@@ -39,7 +40,6 @@ Members:
 Members:
 - Sofia -> mapping, localization, ROS2, mission planning, GitHub upkeep, -> motor control, integration, sensor diagnostics
 - Responsibilities: SLAM, navigation, motor control, sensor integration, system testing
-- Eelis -> ?
 
 
 
@@ -51,8 +51,9 @@ Members:
 - Mapping & Control: placeholders ready for logs and scripts
 
 # Progress updates:
-- Getting Raspery Pi 4, Pixhawk 6C and some motores
+- ((Getting Raspery Pi 4, Pixhawk 6C and some motores))
 - Utilaized a Roborock vacumes LIDAR
+- Desided to not use Pixhawk. Swiched to using two raspberry Pi 5:s (8GB). One to controll and software, one to paintbolla system
 
 
 
