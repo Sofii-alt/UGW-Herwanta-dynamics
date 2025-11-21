@@ -1,7 +1,11 @@
 # An owerlook on software
 This part is ment for desingning the software for a rover, capable of mapping, localization, and basic autonomous navigation.
 ---
+# Data flow
+<img width="1500" height="2000" alt="image" src="https://github.com/user-attachments/assets/4af0bf23-be87-402e-9e69-5190418e61b9" />
 
+
+---
 
 # Sofia: Control Systems & Hardware Integration
 Focus: Making the robot physically move and ensuring all hardware sensors communicate properly.
