@@ -9,16 +9,22 @@ Note: Everyone contributes a bit across the teams since this is a small student 
 <img width="993" height="555" alt="image" src="https://github.com/user-attachments/assets/5438a811-fe35-4a20-8259-51b2504890c0" />
 A preliminary sketch for the robot without the paintball gun yet.
 
-
-#Project Goals
+---
+# Project Goals
 - Develop a rover that can map rooms or outdoor areas using LIDAR, wheel encoders, and IMU.
 - Implement basic navigation and motor control using Raspberry Pi 5.
 - Integrate a paintball/marker system for testing actuation and targeting.
 - Learn and practice mechanical, electrical, and software integration.
 - Long-term: build a terrain-ready rover that autonomously maps areas and marks trees for forestry operations.
 
+# Repository Structure
+`design_sketches/`   -> mechanical drafts, CAD files, 3D renderings  
+`hardware/`          -> motors, batteries, sensors, wiring diagrams, calculations  
+`software/`          -> control scripts, ROS2 nodes, mapping, navigation  
+`tests/`             -> logs, LIDAR data, sensor diagnostics, experiments  
 
-#Team Structure
+
+Team Structure
 ---
 #Team 1: Mechanical
 Members:
@@ -54,6 +60,6 @@ _ SLAM setup and testing
 - Mechanical: chassis designed, early 3D renders complete, bought wheels and 4 motors
 - Electrical: motor & battery calculations ready
 - Sensors: repurposed a Roborock vacuum LDR
-- Hardware: Two Raspberry Pi 5 (8GB) chosen as main computers -> One Pi for system control & mapping (ROS2), one Pi for the paintball/marking system
+- Hardware: Two Raspberry Pi 5 (8GB) chosen and ordered as main computers -> One Pi for system control & mapping (ROS2), one Pi for the paintball/marking system
 - Software: learning (ROS2 Jazzy, SLAM, NAV2, Gazebo)
 -> Decision: Pixhawk and ArduPilot removed from the system to simplify early development
