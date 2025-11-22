@@ -6,67 +6,54 @@ The aim is to combine mechanical design, control systems, mapping, and system in
 Note: Everyone contributes a bit across the teams since this is a small student project.
 
 # Robot showcase
-Here is what our rower plan looks like for now. Dosent yet have the paintball mount in.
 <img width="993" height="555" alt="image" src="https://github.com/user-attachments/assets/5438a811-fe35-4a20-8259-51b2504890c0" />
+A preliminary sketch for the robot without the paintball gun yet.
 
 
+#Project Goals
+- Develop a rover that can map rooms or outdoor areas using LIDAR, wheel encoders, and IMU.
+- Implement basic navigation and motor control using Raspberry Pi 5.
+- Integrate a paintball/marker system for testing actuation and targeting.
+- Learn and practice mechanical, electrical, and software integration.
+- Long-term: build a terrain-ready rover that autonomously maps areas and marks trees for forestry operations.
 
 
-# Project goals
-- Build a rover that can map rooms or outdoor areas using LIDAR, wheel encoders, and IMU
-- Enable basic navigation and control with Raspberry Pi 4 + Pixhawk 6C
-- Mount a paintball/marking system for testing targeting and actuation
-- Learn how to integrate mechanical, electrical, and software systems
-- Future goal: robust rover for forestry or rough terrain, autonomously marking trees and mapping areas
-
-
-
-# Teams and Members
-Everyone contributes across teams. Collaboration is key!
-
-## Team 1: Mechanical
+#Team Structure
+---
+#Team 1: Mechanical
 Members:
-- Aatu -> calculations and desine
-- Veeti -> 3D renderings and desine
-- Eelis -> stability calculations
-- Responsibilities: chassis, motors, encoders, battery, electronics, mechanical stability
+Aatu -> calculations, design
+Veeti -> 3D renderings, design
+Eelis -> stability calculations
+Responsibilities: 
+- Chassis construction
+- Motor selection and installation
+- Encoders, battery mounting, electronics layout
+- Mechanical stability and durability
 
-## Team 2: Paintball/marking system 
+Team 2: Paintball / Marking System
 Members:
-- Leo -> design & actuation of paintball system
-- Responsibilities: mount and test marking system, work with mechanical team
+Leo -> design and actuation of the paintball system
+Responsibilities:
+- Mechanical and electrical integration of the marking system
+- Testing firing mechanism
+- Working with mechanical and software teams for safe operation
 
-## Team 3: Mapping + controls + system Integration 
+Team 3: Mapping, Controls & System Integration
 Members:
-- Sofia -> mapping, localization, ROS2, mission planning, GitHub upkeep, -> motor control, integration, sensor diagnostics
-- Responsibilities: SLAM, navigation, motor control, sensor integration, system testing
+Sofia -> mapping, navigation, control, ROS2, system integration
+Responsibilities:
+_ SLAM setup and testing
+- Navigation stack
+- Motor control and sensor fusion
+- System-wide testing and integration
 
+---
 
-
-
-# Current progress (placeholder for updates)
-- Mechanical: chassis desined, 3D renderings available
-- Electrical: motor/battery calculations in progress
-- Software: Linux + ArduPilot + ROS2 installed, repo structure ready
-- Mapping & Control: placeholders ready for logs and scripts
-
-# Progress updates:
-- ((Getting Raspery Pi 4, Pixhawk 6C and some motores))
-- Utilaized a Roborock vacumes LIDAR
-- Desided to not use Pixhawk. Swiched to using two raspberry Pi 5:s (8GB). One to controll and software, one to paintbolla system
-
-
-
-# Repository structure
-- design_sketches/ -> mechanical concepts and 3D renderings
-- hardware/ -> motors, battery, sensors, calculations, wiring diagrams
-- software/ -> control, mapping, mission planning, tests
-- tests/ -> logs, sensor diagnostics, signal checks
-- budget.xlsx -> ongoing cost calculations
-
-# Future goals
-- Build a robust chassis for rough/forest terrain
-- Fully autonomous navigation system
-- Map and navigate marked areas for forestry applications
-- Use this project as a foundation for Bachelor’s or Master’s thesis
-- Showcase videos of mapping and navigation in action
+# Current Progress
+- Mechanical: chassis designed, early 3D renders complete, bought wheels and 4 motors
+- Electrical: motor & battery calculations ready
+- Sensors: repurposed a Roborock vacuum LDR
+- Hardware: Two Raspberry Pi 5 (8GB) chosen as main computers -> One Pi for system control & mapping (ROS2), one Pi for the paintball/marking system
+- Software: learning (ROS2 Jazzy, SLAM, NAV2, Gazebo)
+-> Decision: Pixhawk and ArduPilot removed from the system to simplify early development
