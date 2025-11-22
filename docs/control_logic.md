@@ -62,7 +62,5 @@ The system will later include:
 - Safety thresholds for motor current and battery protection
 
 
-
-Obstacle-aware path execution
-
-Documented test courses and reproducible test procedures
+# some quick drawings
+<img width="1500" height="2000" alt="image" src="https://github.com/user-attachments/assets/4af0bf23-be87-402e-9e69-5190418e61b9" /> 
