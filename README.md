@@ -57,9 +57,9 @@ _ SLAM setup and testing
 ---
 
 # Current Progress
-- Mechanical: chassis designed, early 3D renders complete, bought wheels and 4 motors
+- Mechanical: chassis designed, early 3D renders complete, bought wheels and 4 motors. Starting to build basic structure
 - Electrical: motor & battery calculations ready
-- Sensors: repurposed a Roborock vacuum LDR
-- Hardware: Two Raspberry Pi 5 (8GB) chosen and ordered as main computers -> One Pi for system control & mapping (ROS2), one Pi for the paintball/marking system
+- Sensors: repurposed a Roborock vacuum LDR. Thinking of ordering a 3D LiDAR
+- Hardware: Two Raspberry Pi 5 (8GB) have been set upp as main computers -> One Pi for system control & mapping (ROS2), one Pi for the paintball/marking system
 - Software: learning (ROS2 Jazzy, SLAM, NAV2, Gazebo)
 -> Decision: Pixhawk and ArduPilot removed from the system to simplify early development
