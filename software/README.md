@@ -1,105 +1,44 @@
-# An owerlook on software
-This part is ment for desingning the software for a rover, capable of mapping, localization, and basic autonomous navigation.
+# Software Overview
+
+This folder contains the early software work for my small autonomous rover project.
+Everything is still in the “baby steps” phase, so testing ideas, figuring out ROS2, and building the basics for mapping, control, and simple autonomy.
+
+I’ve been experimenting with TurtleBot3 Burger examples to understand ROS2 movement and LIDAR workflows, but since this rover uses different hardware (Raspberry Pi 5, no LIDAR, custom sensors), most things will be adapted or rewritten as I learn more.
+
+This isn’t a finished system. It’s a learning project that grows as I figure things out.
+
+# What This Will Eventually Do
+- The goal is to build software that can:
+- Read sensor data (IMU, LDR, wheel/motor feedback)
+- Build a simple map of the environment
+- Keep track of the robot’s position
+- Plan paths and follow basic goals
+- Run onboard on a Raspberry Pi for off-road use
+
+Right now I’m focusing on the fundamentals:
+testing motors, reading sensors, and learning the ROS2 workflow.
+
+# Folder Structure (Quick Tour)
+`software/`
+- `control/`:  Basic movement tests + motor control scripts
+- `mapping/`: First attempts at mapping + simple room visualization
+- `mission_planning/`: Early path-planning experiments
+- `tests/`: Small scripts for checking sensors, signals, and debugging
+
+Each section has a small README that explains what’s inside. Though for now theres not much in them.
+
+# Next Steps
+- Finish installing ROS2 Jazzy + Nav2 on the main Pi
+- Try simple SLAM without LIDAR
+- Improve mapping and sensor fusion
+- Clean up the structure as the project grows
+- Add simulation once the real robot becomes more predictable
+
+# Why This Repo Exists
+This is a university project, a learning experience, and a place to document progress, not a polished robotics stack (yet).
+I’ll keep updating things as I learn more and the rover becomes more capable.
+
 ---
 # Data flow
 <img width="1500" height="2000" alt="image" src="https://github.com/user-attachments/assets/4af0bf23-be87-402e-9e69-5190418e61b9" />
 
-
----
-
-# Sofia: Control Systems & Hardware Integration
-Focus: Making the robot physically move and ensuring all hardware sensors communicate properly.
-
-Responsibilities:
-
-1. Pixhawk & ArduPilot
-- Flash ArduPilot Rover firmware
-- Configure motor outputs, PID, vehicle params
-- Set up safety settings (failsafe, battery monitor)
-- Test the vehicle in SITL + real hardware
-
-2. Sensor Integration
-- Connect + test LIDAR, IMU, wheel encoders
-- Write simple test scripts (Arduino or Python)
-- Ensure sensors publish clean data (correct units, rates, calibration)
-
-3. Communication Layer (ROS2 <-> Pixhawk)
-- Install MAVROS2
-- Set up serial/UART between Raspberry Pi <-> Pixhawk
-- Expose required topics:
-/odom
-/scan (if LIDAR via Pixhawk)
-/imu/data_raw
-/cmd_vel
-
-4. Hardware Documentation
-- Wiring diagrams
-- Voltage requirements + power budget
-- Notes on regulators, fuses, and safe power design
-
-# Sofia: Mapping, Localization & Autonomy
-Focus: Making the robot understand its environment, localize itself, and navigate intelligently.
-
-Responsibilities:
-
-1. Mapping (SLAM)
-- Setup and configure slam_toolbox
-- Process LIDAR data
-- Generate occupancy grid maps
-- Tune scan matching, filtering, and mapping parameters
-- Save/export map results for testing
-
-2. Localization
-- Implement AMCL (or SLAM mode)
-- Fuse odometry + LIDAR + IMU
-- Verify robot position accuracy in RViz2
-
-3. Navigation & Mission Planning (Nav2)
-- Configure planners (DWB, TEb, RPP)
-- Create costmaps
-- Write simple waypoint scripts
-- Implement mission plans:
--- “Go to X, Y”
--- “Visit waypoints in order”
--- “Map unknown region”
-
-4. Simulation
-- Run ArduPilot Rover SITL
-- Test navigation before hardware is complete
-- Document results with screenshots and example runs
-
----
-# Shared Responsibilities
-
-Documentation
-- Keep /docs/ updated
-- Record test results
-- Maintain clean Git commits with clear messages
-
-Testing
-- Weekly tests (simulation or real hardware)
-- Debugging unexpected behavior
-- Cross-check each other’s output topics and logs
-
-DevOps & GitHub
-- Keep repository organized
-- Use branches for new features
-- Review each other’s pull requests
-
-
-
-# Milestones
-
-1. Mapping Demo
-- LIDAR working
-- Basic SLAM map in RViz2
-2. Localization
-- Stable /odom
-- Robot knows where it is in the map
-3. Navigation
-- Robot follows a single goal point
-4. Missions
-- Robot completes a multi-waypoint mission
-- Mapping + autonomy fully integrated
-
-  
