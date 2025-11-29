@@ -15,18 +15,6 @@ Project is set to tree teams
 
 ---
 # mapping and controls
-- Raspberry Pi 4  
-  - Purpose: main computer for mapping & control  
-  - Notes: 5V @ 2.5–3A
-- Pixhawk 6C  
-  - Purpose: motor control, IMU, safety  
-  - Notes: 5V, communicates with Pi
-- Roborock LIDAR  
-  - Purpose: mapping sensor  
-  - Notes: taken from old vacuum, logs in sensors/lidar_test_logs.md  (IN PROGRESS)
-- Wheel Encoders  
-  - Purpose: odometry
- 
 
 
 
