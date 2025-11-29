@@ -1,6 +1,6 @@
 # Software Overview
 
-This folder contains the early software work for my small autonomous rover project.
+This folder contains the early software work for oure small autonomous rover project.
 Everything is still in the “baby steps” phase, so testing ideas, figuring out ROS2, and building the basics for mapping, control, and simple autonomy.
 
 I’ve been experimenting with TurtleBot3 Burger examples to understand ROS2 movement and LIDAR workflows, but since this rover uses different hardware (Raspberry Pi 5, no LIDAR, custom sensors), most things will be adapted or rewritten as I learn more.
