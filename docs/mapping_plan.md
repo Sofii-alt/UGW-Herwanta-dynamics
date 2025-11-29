@@ -35,7 +35,8 @@ We follow a standard ROS2-style SLAM process:
 
 # Collect Sensor Data
 Data sources:
-- LIDAR (USB, 360° scans)  
+- For the future (LIDAR (USB, 360° scans)  )
+- For now a LDR
 - Wheel encoder ticks: distance  
 - IMU (if available): rotation  
 - Timestamps for synchronization  
