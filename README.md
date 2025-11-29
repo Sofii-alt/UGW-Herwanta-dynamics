@@ -26,7 +26,7 @@ A preliminary sketch for the robot without the paintball gun yet.
 
 Team Structure
 ---
-#Team 1: Mechanical
+# Team 1: Mechanical
 Members:
 Aatu -> calculations, design
 Veeti -> 3D renderings, design
@@ -37,7 +37,7 @@ Responsibilities:
 - Encoders, battery mounting, electronics layout
 - Mechanical stability and durability
 
-Team 2: Paintball / Marking System
+# Team 2: Paintball / Marking System
 Members:
 Leo -> design and actuation of the paintball system
 Responsibilities:
@@ -45,7 +45,7 @@ Responsibilities:
 - Testing firing mechanism
 - Working with mechanical and software teams for safe operation
 
-Team 3: Mapping, Controls & System Integration
+# Team 3: Mapping, Controls & System Integration
 Members:
 Sofia -> mapping, navigation, control, ROS2, system integration
 Responsibilities:
