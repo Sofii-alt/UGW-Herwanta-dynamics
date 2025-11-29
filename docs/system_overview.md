@@ -9,10 +9,8 @@ This project aims to build a mobile robot capable of mapping its environment and
 - **Battery pack:** Powers the robot.
 - **Controller board:** Runs ArduPilot/ROS and communicates with sensors.
 - **Mission planning software:** Receives map data and sends navigation commands.
-
-## Data flow
-LIDAR → Controller → Mapping software → Mission planning → Motors
-Battery → Powers all components
+- **Raspbery Pi 5
+- (Pixhawk removed)
 
 
 ## Goals
