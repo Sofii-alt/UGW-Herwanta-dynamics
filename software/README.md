@@ -34,11 +34,14 @@ Each section has a small README that explains what’s inside. Though for now th
 - Clean up the structure as the project grows
 - Add simulation once the real robot becomes more predictable
 
+# Updates
+- Installed Ubuntu on the Raspberry Pi
+
 # Why This Repo Exists
 This is a university project, a learning experience, and a place to document progress, not a polished robotics stack (yet).
 I’ll keep updating things as I learn more and the rover becomes more capable.
 
 ---
-# Data flow
+# Basic data flow idea
 <img width="1500" height="2000" alt="image" src="https://github.com/user-attachments/assets/4af0bf23-be87-402e-9e69-5190418e61b9" />
 
