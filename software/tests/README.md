@@ -1,5 +1,6 @@
 # Test Scripts
 
+# 21.10.2025
 - Installed linux ubuntu
 - installed ROS2
 - installed SLAM
@@ -9,7 +10,7 @@
 
 
 
-# Dec 1 2025
+# 1.12.2025
 - Ros 2 turttle moves
 <img width="649" height="401" alt="520856422-a62c2250-05ff-45b0-a72c-eb707c6df9c7" src="https://github.com/user-attachments/assets/fb3771cd-8124-401a-950f-edfd88e7669f" />
 
